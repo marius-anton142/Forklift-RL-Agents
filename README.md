@@ -1,5 +1,7 @@
 This project explores the training process and the robustness of a forklift agent in a simulated environment. Using Deep Reinforcement Learning, Imitation Learning, and Curriculum Learning, the agent is designed to navigate, maneuver, and accurately transport packages through a warehouse.
 
+Unzip Executables/Forklift.zip for demo.
+
 | <img src="img/forklift01.png" width="500"> |
 |:--:|
 | *Forklift lifting a pallet.* |
