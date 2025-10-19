@@ -16,7 +16,7 @@ Observations and Actions: The agent gathers observations about the state of the 
 
 Learning Techniques: The agent uses Proximal Policy Optimization for training, combined with imitation learning to learn from human demonstrations. PPO is efficient for training due to its ability to keep policy changes within safe limits. In addition, curriculum learning is used to teach the agent increasingly complex behaviors, allowing it to progress from simple tasks to more complex ones in a gradual and effective way.
 
-| <img src="img/endepisode.png" width="500"> |
+| <img src="img/endepisode.png" width="300"> |
 |:--:|
 | *Early termination: the episode ends sooner when the agent makes a very good or very poor decision.* |
 
@@ -25,6 +25,6 @@ The fifth observation is a batch of 5 custom values, manually configured for the
 These observations are normalized and concatenated into a single vector, after which two fully connected hidden layers with 128 units (neurons) each follow, as specified in the network configuration file. Sigmoid activation functions are applied after each layer.
 The last hidden layer is connected to 4 parallel Gemm layers, whose output is multiplied by the value at the corresponding index in the action mask, passed through a softmax, which produces two outputs: the probabilities for the discrete actions and the deterministic probabilities for the discrete actions. These are each concatenated into two vectors.
 
-| <img src="img/architecture03.png" width="500"> |
+| <img src="img/architecture03.png" width="200"> |
 |:--:|
 | *Neural network architecture: The input layer consists of the top row, and the output is represented by the vectors o1 and o2, which contain the discrete actions and the deterministic discrete actions, respectively.* |
