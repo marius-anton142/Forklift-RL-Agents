@@ -1,0 +1,12 @@
+results_best filter=lfs diff=lfs merge=lfs -text
+Assets/ filter=lfs diff=lfs merge=lfs -text
+Assets filter=lfs diff=lfs merge=lfs -text
+Executables filter=lfs diff=lfs merge=lfs -text
+Executables/ filter=lfs diff=lfs merge=lfs -text
+Library/ filter=lfs diff=lfs merge=lfs -text
+Library filter=lfs diff=lfs merge=lfs -text
+Assets/* filter=lfs diff=lfs merge=lfs -text
+Library/* filter=lfs diff=lfs merge=lfs -text
+Executables/* filter=lfs diff=lfs merge=lfs -text
+results_best/* filter=lfs diff=lfs merge=lfs -text
+results/* filter=lfs diff=lfs merge=lfs -text
